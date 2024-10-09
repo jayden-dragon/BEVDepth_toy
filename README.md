@@ -66,37 +66,3 @@ python [EXP_PATH] --ckpt_path [CKPT_PATH] -e -b 8 --gpus 8
 |[BEVStereo](bevdepth/exps/nuscenes/mv/bev_stereo_lss_r50_256x704_128x128_20e_cbgs_2key_da.py)|  |√ |0.3576|	0.6071|	0.2684|	0.4157|	0.3928|	0.2021|	0.4902 | [github](https://github.com/Megvii-BaseDetection/BEVStereo/releases/download/v0.0.2/bev_stereo_lss_r50_256x704_128x128_20e_cbgs_2key_da.pth) |
 |[BEVStereo](bevdepth/exps/nuscenes/mv/bev_stereo_lss_r50_256x704_128x128_20e_cbgs_2key_da_ema.py)|√  |√ |0.3721|	0.5980|	0.2701|	0.4381|	0.3672|	0.1898|	0.4997 | [github](https://github.com/Megvii-BaseDetection/BEVStereo/releases/download/v0.0.2/bev_stereo_lss_r50_256x704_128x128_20e_cbgs_2key_da_ema.pth) |
 
-## FAQ
-
-### EMA
-- The results are different between evaluation during training and evaluation from ckpt.
-
-Due to the working mechanism of EMA, the model parameters saved by ckpt are different from the model parameters used in the training stage.
-
-- EMA exps are unable to resume training from ckpt.
-
-We used the customized EMA callback and this function is not supported for now.
-
-## Cite BEVDepth & BEVStereo & MatrixVT
-If you use BEVDepth and BEVStereo in your research, please cite our work by using the following BibTeX entry:
-
-```latex
- @article{li2022bevdepth,
-  title={BEVDepth: Acquisition of Reliable Depth for Multi-view 3D Object Detection},
-  author={Li, Yinhao and Ge, Zheng and Yu, Guanyi and Yang, Jinrong and Wang, Zengran and Shi, Yukang and Sun, Jianjian and Li, Zeming},
-  journal={arXiv preprint arXiv:2206.10092},
-  year={2022}
-}
-@article{li2022bevstereo,
-  title={Bevstereo: Enhancing depth estimation in multi-view 3d object detection with dynamic temporal stereo},
-  author={Li, Yinhao and Bao, Han and Ge, Zheng and Yang, Jinrong and Sun, Jianjian and Li, Zeming},
-  journal={arXiv preprint arXiv:2209.10248},
-  year={2022}
-}
-@article{zhou2022matrixvt,
-  title={MatrixVT: Efficient Multi-Camera to BEV Transformation for 3D Perception},
-  author={Zhou, Hongyu and Ge, Zheng and Li, Zeming and Zhang, Xiangyu},
-  journal={arXiv preprint arXiv:2211.10593},
-  year={2022}
-}
-```
