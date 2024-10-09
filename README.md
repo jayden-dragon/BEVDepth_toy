@@ -4,25 +4,6 @@ estimation. For more details, please refer to our [paper on Arxiv](https://arxiv
 
 <img src="assets/bevdepth.png" width="1000" >
 
-## BEVStereo
-BEVStereo is a new multi-view 3D object detector using temporal stereo to enhance depth estimation.
-<img src="assets/bevstereo.png" width="1000" >
-
-## MatrixVT
-[MatrixVT](bevdepth/exps/nuscenes/MatrixVT/matrixvt_bev_depth_lss_r50_256x704_128x128_24e_ema.py) is a novel View Transformer for BEV paradigm with high efficiency and without customized operators. For more details, please refer to our [paper on Arxiv](https://arxiv.org/abs/2211.10593). Try MatrixVT on **CPU** by run [this file](bevdepth/layers/backbones/matrixvt.py) !
-<img src="assets/matrixvt.jpg" width="1000" >
-
-## Updates!!
-* 【2022/12/06】 We released our new View Transformer (MatrixVT), the paper is on [Arxiv](https://arxiv.org/abs/2211.10593).
-* 【2022/11/30】 We updated our paper(BEVDepth) on [Arxiv](https://arxiv.org/abs/2206.10092).
-* 【2022/11/18】 Both BEVDepth and BEVStereo were accepted by AAAI'2023.
-* 【2022/09/22】 We released our paper(BEVStereo) on [Arxiv](https://arxiv.org/abs/2209.10248).
-* 【2022/08/24】 We submitted our result(BEVStereo) on [nuScenes Detection Task](https://nuscenes.org/object-detection?externalData=all&mapData=all&modalities=Camera) and achieved the SOTA.
-* 【2022/06/23】 We submitted our result(BEVDepth) without extra data on [nuScenes Detection Task](https://nuscenes.org/object-detection?externalData=all&mapData=all&modalities=Camera) and achieved the SOTA.
-* 【2022/06/21】 We released our paper(BEVDepth) on [Arxiv](https://arxiv.org/abs/2206.10092).
-* 【2022/04/11】 We submitted our result(BEVDepth) on [nuScenes Detection Task](https://nuscenes.org/object-detection?externalData=all&mapData=all&modalities=Camera) and achieved the SOTA.
-
-
 ## Quick Start
 ### Installation
 **Step 0.** Install [pytorch](https://pytorch.org/)(v1.9.0).
