@@ -20,7 +20,7 @@ python setup.py develop
 ```
 
 ### Data preparation
-**Step 0.** Download nuScenes official dataset.
+**Step 0.** Download nuScenes official [mini dataset](https://www.nuscenes.org/nuscenes#download).
 
 **Step 1.** Symlink the dataset root to `./data/`.
 ```
