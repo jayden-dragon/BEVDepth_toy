@@ -66,3 +66,7 @@ python [EXP_PATH] --ckpt_path [CKPT_PATH] -e -b 8 --gpus 8
 |[BEVStereo](bevdepth/exps/nuscenes/mv/bev_stereo_lss_r50_256x704_128x128_20e_cbgs_2key_da.py)|  |√ |0.3576|	0.6071|	0.2684|	0.4157|	0.3928|	0.2021|	0.4902 | [github](https://github.com/Megvii-BaseDetection/BEVStereo/releases/download/v0.0.2/bev_stereo_lss_r50_256x704_128x128_20e_cbgs_2key_da.pth) |
 |[BEVStereo](bevdepth/exps/nuscenes/mv/bev_stereo_lss_r50_256x704_128x128_20e_cbgs_2key_da_ema.py)|√  |√ |0.3721|	0.5980|	0.2701|	0.4381|	0.3672|	0.1898|	0.4997 | [github](https://github.com/Megvii-BaseDetection/BEVStereo/releases/download/v0.0.2/bev_stereo_lss_r50_256x704_128x128_20e_cbgs_2key_da_ema.pth) |
 
+
+
+## Contact
+gsjang95@korea.ac.kr
